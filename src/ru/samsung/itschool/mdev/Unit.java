@@ -1,18 +1,24 @@
 package ru.samsung.itschool.mdev;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Unit {
-    int hp;
     String name;
+    int health;
 
-    public Unit(String name, int hp) {
+
+    public Unit(String name, int i) {
         this.name = name;
-        this.hp = hp;
+        this.health = i;
     }
 
-    public void print_all() {
-        System.out.println("Name: " + name);
-        System.out.println("Health: " + hp);
+    public Unit (Unit unit) {
+        this.name = unit.name;
+        this.health = unit.health;
+    }
+
+    void out() {
+        System.out.println("Имя: " + name);
+        System.out.println("Здоровье: " + health);
     }
 }
