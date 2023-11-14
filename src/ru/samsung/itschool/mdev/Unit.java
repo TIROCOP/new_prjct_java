@@ -20,5 +20,6 @@ public class Unit {
     void out() {
         System.out.println("Имя: " + name);
         System.out.println("Здоровье: " + health);
+
     }
 }

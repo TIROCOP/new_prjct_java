@@ -13,5 +13,6 @@ public class Mage extends Unit {
     void out() {
         super.out();
         System.out.println("Мана: " + mana);
+
     }
 }
